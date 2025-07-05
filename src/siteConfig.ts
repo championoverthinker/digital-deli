@@ -5,12 +5,12 @@ import type {
 } from "@/types.ts";
 
 export const SITE: SiteConfiguration = {
-  title: "Barebones",
+  title: "Shubham --verbose",
   description:
-    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
+    "Words appear here.",
   href: "https://barebones.superwebthemes.com",
-  author: "SuperWeb Development Inc.",
-  locale: "en-CA",
+  author: "Shubham",
+  locale: "en-IN",
 };
 
 export const NAV_LINKS: NavigationLinks = {
@@ -18,14 +18,14 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/blog",
     label: "Blog",
   },
-  projects: {
-    path: "/projects",
-    label: "Projects",
-  },
-  documentation: {
-    path: "https://docs.superwebthemes.com",
-    label: "Documentation",
-  },
+  // projects: {
+  //   path: "/projects",
+  //   label: "Projects",
+  // },
+  // documentation: {
+  //   path: "https://docs.superwebthemes.com",
+  //   label: "Documentation",
+  // },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
