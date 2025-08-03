@@ -2,14 +2,14 @@
 author: Shubham
 pubDatetime: 2025-06-21T15:22:00Z
 modDatetime: 2025-06-21T16:52:45.934Z
-title: Weeknote 1
+title: "Weeknote #1: Week of 21st June 2025"
 slug: weeknote-1
 featured: true
 draft: false
 tags:
   - docs
 description:
-  Weeknote #1
+  "Weeknote #1"
 ---
 Okay, here we go. This is going to be the first weeknote that I'm ever going to post on the internet. Over the past few years, I guess I've already written quite a few weeknotes without me realizing that I was in fact developing a some sort of a habit to take stock of how a week (or fortnight) went by. Though most of those contents are now only confined to my journals, I've become aware that most of my journal entries about how my week really went by focus on the not-so-pleasant, rough, and tough happenings through that time period. So in an attempt to find a better balance where I become more conscious of the easy, pleasant, and good parts of the week along with the usual hurdles and sufferings of life that keep popping up, I figured that sharing these weekly stock-takes of life here on the internet where other people can take a peek at it might be a good idea, or who knows it might be a ridiculous one. I guess there's only one way to find out. So I will try to write these weeknotes on one of the days from Wednesday to Friday every week depending on my mood fluctuations. I know (I know) that I'm posting this on a Sunday, but sometimes life happens and one can get busy figuring out the right flavor combination for the marination of pork, and then also getting the cook on it right(which was a success by the way for what it's worth!).
 

@@ -2,14 +2,14 @@
 author: Shubham
 pubDatetime: 2025-06-28T15:22:00Z
 modDatetime: 2025-06-28T16:52:45.934Z
-title: Weeknote 2
+title: "Weeknote #2: Week of 28th June 2025"
 slug: weeknote-2
 featured: true
 draft: false
 tags:
   - docs
 description:
-  Weeknote #2
+  "Weeknote #2"
 ---
 Another very very early morning, and another kinda late weeknote.
 
