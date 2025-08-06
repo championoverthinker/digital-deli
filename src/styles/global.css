@@ -5,12 +5,12 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #f7efe3;      /* warm, paper-like (parchment) */
-  --foreground: #2d1c0f;      /* rich, dark brown for strong contrast */
-  --accent: #e39a4f;          /* warm, golden ochre accent */
-  --accent-hover: #b86b1b;    /* deeper, burnt orange for hover */
-  --muted: #a58c7b;           /* muted taupe for secondary text */
-  --border: #e2c9a5;          /* light tan for subtle borders */
+  --background: #f6eee1;
+  --foreground: #012c56;
+  --accent: #7c4a1e;
+  --accent-hover: #e14a39;
+  --muted: #efd8b0;
+  --border: #dc9891;        /* light tan for subtle borders */
   --card-bg: #fffaf3;         /* lighter cream for cards */
   --code-bg: #f3e9d2;         /* pale tan for code blocks */
   --selection: #ffe5b4;       /* pale peach for selection */
@@ -21,15 +21,14 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --background: #232946;
-  --foreground: #e3e8ee;
-  --accent: #7dcfb6;
-  --accent-hover: #a0e9d6;
-  --muted: #a1a7b3;
-  --border: #353b47;
-  --card-bg: #2a2d3e;
-  --code-bg: #232946;
-  --selection: #3b4d6b;
+  --background: #2f3741;
+  --foreground: #e6e6e6;
+  --accent: #baf2d8; 
+  --muted: #596b81;
+  --border: #3b4655;
+  --card-bg: #2f3741;
+  --code-bg: #2f3741;
+  --selection: #1ad9d9;
   --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --link: #baf2d8;           /* pale mint green */
   --link-hover: #e0ffe6;     /* very pale, almost white-mint for hover */
