@@ -5,19 +5,35 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #f7efe3;      /* warm, paper-like (parchment) */
+  --foreground: #2d1c0f;      /* rich, dark brown for strong contrast */
+  --accent: #e39a4f;          /* warm, golden ochre accent */
+  --accent-hover: #b86b1b;    /* deeper, burnt orange for hover */
+  --muted: #a58c7b;           /* muted taupe for secondary text */
+  --border: #e2c9a5;          /* light tan for subtle borders */
+  --card-bg: #fffaf3;         /* lighter cream for cards */
+  --code-bg: #f3e9d2;         /* pale tan for code blocks */
+  --selection: #ffe5b4;       /* pale peach for selection */
+  --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --link: #b86b1b;           /* warm burnt orange */
+  --link-hover: #a34700;     /* deeper, more saturated burnt orange */
+  --link-visited: #7c4a1e;   /* muted brown-plum */
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #eb3fd3;
-  --muted: #7d4f7c;
-  --border: #642451;
+  --background: #232946;
+  --foreground: #e3e8ee;
+  --accent: #7dcfb6;
+  --accent-hover: #a0e9d6;
+  --muted: #a1a7b3;
+  --border: #353b47;
+  --card-bg: #2a2d3e;
+  --code-bg: #232946;
+  --selection: #3b4d6b;
+  --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --link: #baf2d8;           /* pale mint green */
+  --link-hover: #e0ffe6;     /* very pale, almost white-mint for hover */
+  --link-visited: #a3d9c9;   /* slightly deeper pale green for visited */
 }
 
 @theme inline {
@@ -39,6 +55,12 @@ html[data-theme="dark"] {
   }
   body {
     @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
   a,
   button {
@@ -58,12 +80,72 @@ html[data-theme="dark"] {
   @apply max-w-3xl;
 }
 
-.active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-4;
+/* Remove wavy underline for active tab */
+.active-nav,
+a.active,
+nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;           /* solid underline */
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  /* Or, for a background highlight instead: */
+  /* background: var(--selection); */
+  /* border-radius: 4px; */
+  /* padding: 0.1em 0.3em; */
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 1rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+code, pre {
+  background: var(--code-bg);
+  color: var(--foreground);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+.card, .post, .container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+::selection {
+  background: var(--selection);
+  color: var(--foreground);
 }
