@@ -17,7 +17,7 @@ html[data-theme="light"] {
   --link: #b86b1b;
   --link-hover: #a34700;
   --link-visited: #7c4a1e;
-  --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-family: "Noto Sans", sans-serif;
 }
 
 html[data-theme="dark"] {
@@ -52,7 +52,7 @@ html[data-theme="dark"] {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-family);
-    font-size: 1.125rem;
+    font-size: medium;
     line-height: 1.6;
     margin: 0;
     padding: 0;
