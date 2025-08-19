@@ -5,36 +5,31 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #f6eee1;
+  --background: #fdf6e3;      /* soft, paper-like cream */
   --foreground: #012c56;
   --accent: #7c4a1e;
   --accent-hover: #e14a39;
   --muted: #efd8b0;
-  --border: #dc9891;        /* light tan for subtle borders */
+  --border: #e6dbc7;          /* subtle, warm border */
   --card-bg: #fffaf3;         /* lighter cream for cards */
   --code-bg: #f3e9d2;         /* pale tan for code blocks */
   --selection: #ffe5b4;       /* pale peach for selection */
+  --link: #b86b1b;
+  --link-hover: #a34700;
+  --link-visited: #7c4a1e;
   --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --link: #b86b1b;           /* warm burnt orange */
-  --link-hover: #a34700;     /* deeper, more saturated burnt orange */
-  --link-visited: #7c4a1e;   /* muted brown-plum */
 }
 
 html[data-theme="dark"] {
-  --background: #2f3741;
-  --foreground: #e6e6e6;
-  --accent: #baf2d8; 
-  --muted: #596b81;
-  --border: #3b4655;
-  --card-bg: #2f3741;
-  --code-bg: #2f3741;
-  --selection: #1ad9d9;
-  --font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --link: #baf2d8;           /* pale mint green */
-  --link-hover: #e0ffe6;     /* very pale, almost white-mint for hover */
-  --link-visited: #a3d9c9;   /* slightly deeper pale green for visited */
+  --background: #353640;
+  --foreground: #e9edf1;
+  --accent: #ad45c5;
+  --muted: #715566;
+  --border: #86436b;
+  --link: #e056fd;         /* vibrant orchid (purple-pink) */
+  --link-hover: #ff6fcb;   /* bright, poppy pink-purple for hover */
+  --link-visited: #b15ee0; /* deep, lively purple-pink for visited */
 }
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -57,6 +52,7 @@ html[data-theme="dark"] {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-family);
+    font-size: 1.125rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -110,12 +106,14 @@ body {
 
 a {
   color: var(--link);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:visited:hover,
+a:visited:focus  {
   color: var(--link-hover);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;

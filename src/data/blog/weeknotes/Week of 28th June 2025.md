@@ -7,7 +7,7 @@ slug: weeknote-2
 featured: true
 draft: false
 tags:
-  - docs
+  - weeknotes
 description:
   "Weeknote #2"
 ---
