@@ -2,7 +2,7 @@
     website: "https://flavorfulsuffering.xyz/", // replace this with your deployed domain
     author: "Shubham",
     profile: "",
-    desc: "Trying to find some solace in the ever-distractible digital world, and connecting with the flavors of suffering in the process.",
+    desc: "",
     title: "Shubham --verbose",
     ogImage: "astropaper-og.jpg",
     lightAndDarkMode: true,
