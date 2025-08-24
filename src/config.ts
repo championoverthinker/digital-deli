@@ -2,7 +2,7 @@
     website: "https://flavorfulsuffering.xyz/", // replace this with your deployed domain
     author: "Shubham",
     profile: "",
-    desc: "",
+    desc: "Some words I thought of that may or may not make sense.",
     title: "Shubham --verbose",
     ogImage: "astropaper-og.jpg",
     lightAndDarkMode: true,
